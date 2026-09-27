@@ -1,0 +1,482 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Курс ТРПО — HTML и CSS</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+<header class="site-header">
+
+    <div class="container header-inner">
+
+        <a class="brand" href="#about">
+
+            <img src="images/logo.svg"
+                 alt="Логотип курса TRPO">
+
+            <span>Практическая работа №1</span>
+
+        </a>
+
+        <nav class="nav" aria-label="Основная навигация">
+
+            <a href="#about">О курсе</a>
+            <a href="#tracks">Направления</a>
+            <a href="#schedule">Расписание</a>
+            <a href="#signup">Регистрация</a>
+
+        </nav>
+
+    </div>
+
+</header>
+
+
+<main>
+
+
+
+    <section class="hero" id="about">
+
+        <div class="container hero-inner">
+
+            <div class="hero-text">
+
+                <span class="pill">
+                    HTML + CSS
+                </span>
+
+                <h1>
+                    Основы frontend-разработки
+                </h1>
+
+                <p>
+                    Учебная страница по материалам набора данных
+                    практической работы.
+                    Здесь собраны основные темы:
+                    HTML, CSS, Git, формы,
+                    доступность и DevTools.
+                </p>
+
+                <a class="button" href="#tracks">
+                    Посмотреть темы
+                </a>
+
+            </div>
+
+
+            <img
+                class="hero-image"
+                src="images/cover.svg"
+                alt="Иллюстрация курса HTML и CSS"
+            >
+
+        </div>
+
+    </section>
+
+
+
+
+    <section class="section" id="tracks">
+
+        <div class="container">
+
+            <h2>Направления курса</h2>
+
+            <p class="section-description">
+                Карточки составлены по данным
+                из файла content.csv.
+            </p>
+
+
+            <div class="cards">
+
+
+                <article class="card">
+
+                    <span class="card-category">
+                        Основа
+                    </span>
+
+                    <h3>HTML</h3>
+
+                    <p>
+                        Структура и семантика документа
+                    </p>
+
+                    <strong>
+                        Значение: 8
+                    </strong>
+
+                </article>
+
+
+                <article class="card">
+
+                    <span class="card-category">
+                        Оформление
+                    </span>
+
+                    <h3>CSS</h3>
+
+                    <p>
+                        Стили и адаптивность
+                    </p>
+
+                    <strong>
+                        Значение: 9
+                    </strong>
+
+                </article>
+
+
+                <article class="card">
+
+                    <span class="card-category">
+                        Инструменты
+                    </span>
+
+                    <h3>Git</h3>
+
+                    <p>
+                        История изменений
+                    </p>
+
+                    <strong>
+                        Значение: 7
+                    </strong>
+
+                </article>
+
+
+                <article class="card">
+
+                    <span class="card-category">
+                        HTML
+                    </span>
+
+                    <h3>Forms</h3>
+
+                    <p>
+                        Пользовательский ввод
+                    </p>
+
+                    <strong>
+                        Значение: 6
+                    </strong>
+
+                </article>
+
+
+                <article class="card">
+
+                    <span class="card-category">
+                        Качество
+                    </span>
+
+                    <h3>Accessibility</h3>
+
+                    <p>
+                        Доступность интерфейса
+                    </p>
+
+                    <strong>
+                        Значение: 10
+                    </strong>
+
+                </article>
+
+
+                <article class="card">
+
+                    <span class="card-category">
+                        Проверка
+                    </span>
+
+                    <h3>DevTools</h3>
+
+                    <p>
+                        Исследование DOM и стилей
+                    </p>
+
+                    <strong>
+                        Значение: 8
+                    </strong>
+
+                </article>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+
+    <section class="section section-light" id="schedule">
+
+        <div class="container">
+
+            <h2>Таблица тем</h2>
+
+            <p class="section-description">
+                Данные взяты из файла content.csv.
+            </p>
+
+
+            <div class="table-wrapper">
+
+                <table>
+
+                    <thead>
+
+                    <tr>
+                        <th>№</th>
+                        <th>Тема</th>
+                        <th>Категория</th>
+                        <th>Значение</th>
+                    </tr>
+
+                    </thead>
+
+
+                    <tbody>
+
+                    <tr>
+                        <td>1</td>
+                        <td>HTML</td>
+                        <td>Основа</td>
+                        <td>8</td>
+                    </tr>
+
+                    <tr>
+                        <td>2</td>
+                        <td>CSS</td>
+                        <td>Оформление</td>
+                        <td>9</td>
+                    </tr>
+
+                    <tr>
+                        <td>3</td>
+                        <td>Git</td>
+                        <td>Инструменты</td>
+                        <td>7</td>
+                    </tr>
+
+                    <tr>
+                        <td>4</td>
+                        <td>Forms</td>
+                        <td>HTML</td>
+                        <td>6</td>
+                    </tr>
+
+                    <tr>
+                        <td>5</td>
+                        <td>Accessibility</td>
+                        <td>Качество</td>
+                        <td>10</td>
+                    </tr>
+
+                    <tr>
+                        <td>6</td>
+                        <td>DevTools</td>
+                        <td>Проверка</td>
+                        <td>8</td>
+                    </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+
+    <section class="section" id="signup">
+
+        <div class="container form-container">
+
+            <h2>Регистрация</h2>
+
+            <p class="section-description">
+                Заполните форму для участия
+                в учебном курсе.
+            </p>
+
+
+            <form
+                class="signup-form"
+                action="#signup"
+                method="get"
+            >
+
+
+                <div class="form-field">
+
+                    <label for="name">
+                        Имя
+                    </label>
+
+                    <input
+                        id="name"
+                        name="name"
+                        type="text"
+                        minlength="2"
+                        maxlength="40"
+                        required
+                    >
+
+                </div>
+
+
+
+                <div class="form-field">
+
+                    <label for="email">
+                        Email
+                    </label>
+
+                    <input
+                        id="email"
+                        name="email"
+                        type="email"
+                        required
+                    >
+
+                </div>
+
+
+
+                <div class="form-field">
+
+                    <label for="topic">
+                        Интересующая тема
+                    </label>
+
+                    <select
+                        id="topic"
+                        name="topic"
+                        required
+                    >
+
+                        <option value="">
+                            Выберите тему
+                        </option>
+
+                        <option value="html">
+                            HTML
+                        </option>
+
+                        <option value="css">
+                            CSS
+                        </option>
+
+                        <option value="git">
+                            Git
+                        </option>
+
+                        <option value="forms">
+                            Forms
+                        </option>
+
+                        <option value="accessibility">
+                            Accessibility
+                        </option>
+
+                        <option value="devtools">
+                            DevTools
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+
+                <div class="form-field">
+
+                    <label for="experience">
+                        Опыт в месяцах
+                    </label>
+
+                    <input
+                        id="experience"
+                        name="experience"
+                        type="number"
+                        min="0"
+                        max="60"
+                        value="0"
+                        required
+                    >
+
+                </div>
+
+
+
+                <div class="form-field">
+
+                    <label for="message">
+                        Комментарий
+                    </label>
+
+                    <textarea
+                        id="message"
+                        name="message"
+                        rows="5"
+                        minlength="10"
+                        maxlength="300"
+                        required
+                    ></textarea>
+
+                </div>
+
+
+                <button
+                    class="button"
+                    type="submit"
+                >
+                    Отправить
+                </button>
+
+
+            </form>
+
+        </div>
+
+    </section>
+
+
+</main>
+
+
+
+<footer class="site-footer">
+
+    <div class="container">
+
+        <p>
+            Практическая работа №1 —
+            Технологии разработки программного обеспечения
+        </p>
+
+    </div>
+
+</footer>
+
+
+</body>
+</html>
