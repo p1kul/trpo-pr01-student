@@ -1,0 +1,473 @@
+* {
+    box-sizing: border-box;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    margin: 0;
+
+    background: #f4f6fb;
+    color: #1f2937;
+
+    font-family: Arial, sans-serif;
+
+    line-height: 1.5;
+}
+
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+
+a {
+    color: #315efb;
+}
+
+
+a:focus,
+button:focus,
+input:focus,
+select:focus,
+textarea:focus {
+
+    outline: 3px solid #9db2ff;
+    outline-offset: 2px;
+}
+
+
+.container {
+
+    width: min(1100px, calc(100% - 40px));
+
+    margin: 0 auto;
+}
+
+
+
+/* ШАПКА */
+
+.site-header {
+
+    background: #111827;
+    color: white;
+}
+
+
+.header-inner {
+
+    min-height: 78px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 24px;
+}
+
+
+.brand {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    color: white;
+
+    text-decoration: none;
+
+    font-weight: 700;
+}
+
+
+.brand img {
+
+    width: 70px;
+    height: 42px;
+
+    object-fit: cover;
+
+    border-radius: 8px;
+}
+
+
+
+/* НАВИГАЦИЯ */
+
+.nav {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 18px;
+}
+
+
+.nav a {
+
+    color: white;
+
+    text-decoration: none;
+}
+
+
+.nav a:hover {
+
+    text-decoration: underline;
+}
+
+
+
+/* ГЛАВНЫЙ БЛОК */
+
+.hero {
+
+    padding: 48px 0 24px;
+}
+
+
+.hero-inner {
+
+    background: white;
+
+    border-radius: 18px;
+
+    padding: 32px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 34px;
+
+    box-shadow:
+        0 12px 36px rgba(0, 0, 0, 0.06);
+}
+
+
+.hero-text,
+.hero-image {
+
+    flex: 1 1 0;
+}
+
+
+.hero h1 {
+
+    margin: 12px 0;
+
+    font-size: 38px;
+
+    line-height: 1.15;
+}
+
+
+.hero p,
+.section-description {
+
+    color: #6b7280;
+}
+
+
+.pill,
+.card-category {
+
+    display: inline-block;
+
+    background: #e9efff;
+
+    color: #315efb;
+
+    border-radius: 999px;
+
+    padding: 5px 10px;
+
+    font-size: 13px;
+}
+
+
+
+/* КНОПКА */
+
+.button {
+
+    display: inline-block;
+
+    margin-top: 8px;
+
+    border: 0;
+
+    border-radius: 10px;
+
+    background: #315efb;
+
+    color: white;
+
+    padding: 11px 17px;
+
+    font: inherit;
+
+    text-decoration: none;
+
+    cursor: pointer;
+}
+
+
+.button:hover {
+
+    background: #2449c9;
+}
+
+
+
+/* РАЗДЕЛЫ */
+
+.section {
+
+    padding: 38px 0;
+}
+
+
+.section-light {
+
+    background: #eef2f7;
+}
+
+
+.section h2 {
+
+    margin-top: 0;
+
+    font-size: 28px;
+}
+
+
+
+/* КАРТОЧКИ */
+
+.cards {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 16px;
+}
+
+
+.card {
+
+    flex: 1 1 300px;
+
+    min-width: 0;
+
+    background: white;
+
+    border: 1px solid #e5e7eb;
+
+    border-radius: 14px;
+
+    padding: 20px;
+}
+
+
+.card h3 {
+
+    margin: 12px 0 6px;
+}
+
+
+.card p {
+
+    min-height: 48px;
+
+    color: #6b7280;
+}
+
+
+
+/* ТАБЛИЦА */
+
+.table-wrapper {
+
+    overflow-x: auto;
+}
+
+
+table {
+
+    width: 100%;
+
+    border-collapse: collapse;
+
+    background: white;
+
+    border-radius: 14px;
+
+    overflow: hidden;
+}
+
+
+th,
+td {
+
+    padding: 13px;
+
+    border-bottom: 1px solid #e5e7eb;
+
+    text-align: left;
+}
+
+
+th {
+
+    background: #111827;
+
+    color: white;
+}
+
+
+
+/* ФОРМА */
+
+.form-container {
+
+    max-width: 760px;
+}
+
+
+.signup-form {
+
+    background: white;
+
+    border-radius: 16px;
+
+    padding: 24px;
+}
+
+
+.form-field {
+
+    margin-bottom: 16px;
+}
+
+
+label {
+
+    display: block;
+
+    margin-bottom: 6px;
+
+    font-weight: 700;
+}
+
+
+input,
+select,
+textarea {
+
+    width: 100%;
+
+    padding: 11px 12px;
+
+    border: 1px solid #cbd5e1;
+
+    border-radius: 9px;
+
+    background: white;
+
+    font: inherit;
+}
+
+
+textarea {
+
+    resize: vertical;
+}
+
+
+
+/* ПОДВАЛ */
+
+.site-footer {
+
+    margin-top: 20px;
+
+    background: #111827;
+
+    color: white;
+
+    padding: 22px 0;
+
+    text-align: center;
+}
+
+
+
+/* АДАПТАЦИЯ ПОД ТЕЛЕФОН */
+
+@media (max-width: 760px) {
+
+    .header-inner,
+    .hero-inner {
+
+        flex-direction: column;
+
+        align-items: stretch;
+    }
+
+
+    .header-inner {
+
+        padding: 16px 0;
+    }
+
+
+    .nav {
+
+        gap: 12px;
+    }
+
+
+    .hero {
+
+        padding-top: 24px;
+    }
+
+
+    .hero-inner {
+
+        padding: 22px;
+    }
+
+
+    .hero h1 {
+
+        font-size: 30px;
+    }
+
+
+    .card {
+
+        flex-basis: 100%;
+    }
+
+
+    th,
+    td {
+
+        padding: 10px;
+    }
+
+}
